@@ -10,7 +10,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ==Usage instructions:== The compute picks a random word and then asks for a user to guess the word by each time guesing a letter that could contain in the computer generated word. User only has certain amount of tries to keep guessing letter before needing to try to guess the word. 
 
 
-==File structure of the project: ==
+==File structure of the project:==
 
 
-==License information: ==
+==License information:==
