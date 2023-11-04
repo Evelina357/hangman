@@ -1,17 +1,15 @@
 # Hangman
-Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
+### Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
-
-
-**Instalation instructions:** Open the files ending with .py and run the code as you would normally run Python code. 
+### This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 
-**Usage instructions:** The compute picks a random word (from a hidden list of words) and then asks for a user to guess a letter that could contain in the computer picked word. The computer will inform the user of the picked letter is in the word or not. If the user enters an invalid input (containing a symbol not in alphabetical order or containing more than one letter), the computer will keep asking for the user to enter a valid input until one is received. 
+**Installation instructions:** Open the milestone_4.py file and run the code as you would normally run any Python code (the code is made so that it runs the Hangman class by calling ask_for_input() method).
+
+**Usage instructions:** The compute picks a random word (from a hidden list of words) and then asks for a user to guess a letter of that word. The computer will inform the user if the picked letter is in the word. If the guessed letter is not in the word, computer will also inform the players of how many lives (or guesses) the player has left. If the user enters an invalid input (containing a symbol not in alphabetical order or containing more than one letter), the computer will keep asking for the user to enter a valid input until one is received. Each correct guessed letter replaces an underscore (representing hidden letter) in word_guessed variable and then the variable is printed back to the player.The player wins if he/she guesses the word before running out of 5 lives. 
 
 
-**File structure of the project:** A hidden list from which computer picks a word and two functions 
-check_guess(guess) and ask_for_input().
+**File structure of the project:** A Hangman class is built to capture the game. It contains attributes: word_list (a hidden list from which computer picks a random word), num_lives (number of wrong guesses the player is allowed to have before the game ends), word (the word picked by the computer), word_guessed (variable that stores the correct guessed letter by the player), num_letters (number of unique letters in the computer chosen word), list_of_guesses (list where all the guessed letters by the player are stored) and guess (where a letter guessed by the user is temporarily stored). The mentioned attributes then are used in two methods check_guess() (where it is checked whether the user input value is valid) and ask_for_input() (where it asks the user to guess the letter and the letter is checked against the secret word).
 
 
 **License information:** Unknown as of yet. 
